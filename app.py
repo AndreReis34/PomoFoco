@@ -6,10 +6,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/contatos')
-def contatos():
-    return render_template('contatos.html')
-
 @app.route('/<username>')
 def profile(username):
     return render_template('username.html', username=username)

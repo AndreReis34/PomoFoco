@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>homepage</title>
+    <title>PomoFoco</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <p>Ola mundo</p>
-    <p>Esse é um teste</p>
+<div class="app">
+
+    <h1>Pomodoro</h1>
+
+    <div class="config">
+        <div class="campo">
+            <label>Foco (min)</label>
+            <input type="number" id="foco">
+        </div>
+
+        <div class="campo">
+            <label>Pausa curta</label>
+            <input type="number" id="pausaCurta">
+        </div>
+
+        <div class="campo">
+            <label>Pausa longa</label>
+            <input type="number" id="pausaLonga">
+        </div>
+
+        <div class="campo">
+            <label>Intervalo</label>
+            <input type="number" id="intervalo">
+        </div>
+
+        <button class="btn-primary" onclick="implementar()">Salvar</button>
+    </div>
+
+    <div class="timer-box">
+        <span id="status">PARADO</span>
+        <h2 id="timer">00:00</h2>
+
+        <div class="acoes">
+            <button class="btn-start" onclick="iniciar()">Iniciar</button>
+            <button class="btn-stop" onclick="parar()">Parar</button>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="javascript/index.js"></script>
 </body>
 </html>
