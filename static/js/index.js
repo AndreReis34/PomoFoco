@@ -78,17 +78,37 @@ function atualizarTela() {
 }
 
 function carregarConfig() {
-    focoInput.value = localStorage.getItem("foco") || "";
-    pausaCurtaInput.value = localStorage.getItem("pausaCurta") || "";
-    pausaLongaInput.value = localStorage.getItem("pausaLonga") || "";
-    intervaloInput.value = localStorage.getItem("intervalo") || "";
+    focoInput.value = "";
+    pausaCurtaInput.value = "";
+    pausaLongaInput.value = "";
+    intervaloInput.value = "";
 }
 
 /* Referências */
-const focoInput = document.getElementById("foco");
-const pausaCurtaInput = document.getElementById("pausaCurta");
-const pausaLongaInput = document.getElementById("pausaLonga");
-const intervaloInput = document.getElementById("intervalo");
+const focoInput = document.getElementById("foco")
+focoInput.addEventListener("focoInput", e => {
+    if (e.target.value < 1) {
+        e.target.value = "";
+    }
+});
+const pausaCurtaInput = document.getElementById("pausaCurta")
+pausaCurtaInput.addEventListener("pausaCurtaInput", e => {
+    if (e.target.value < 1) {
+        e.target.value = "";
+    }
+});
+const pausaLongaInput = document.getElementById("pausaLonga")
+pausaLongaInput.addEventListener("pausaLongaInput", e => {
+    if (e.target.value < 1) {
+        e.target.value = "";
+    }
+});
+const intervaloInput = document.getElementById("intervalo")
+intervaloInput.addEventListener("intervaloInput", e => {
+    if (e.target.value < 1) {
+        e.target.value = "";
+    }
+});
 const timerDisplay = document.getElementById("timer");
 const status = document.getElementById("status");
 
