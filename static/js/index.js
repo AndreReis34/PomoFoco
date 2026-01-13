@@ -40,6 +40,7 @@ function iniciarContagem(segundos) {
         atualizarTela();
 
         if (tempo <= 0) {
+            tocarSino()
             proximoCiclo();
         }
     }, 1000);
@@ -82,6 +83,12 @@ function carregarConfig() {
     pausaCurtaInput.value = "";
     pausaLongaInput.value = "";
     intervaloInput.value = "";
+}
+
+function tocarSino() {
+    const audio = document.getElementById("somSino");
+    audio.currentTime = 0; // reinicia
+    audio.play();
 }
 
 /* Referências */
