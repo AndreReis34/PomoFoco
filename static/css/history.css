@@ -1,0 +1,17 @@
+.heatmap {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    gap: 4px;
+}
+
+.dia {
+    width: 20px;
+    height: 20px;
+    background: #ebedf0;
+    border-radius: 3px;
+}
+
+.nivel-1 { background: #9be9a8; }
+.nivel-2 { background: #40c463; }
+.nivel-3 { background: #30a14e; }
+.nivel-4 { background: #216e39; }

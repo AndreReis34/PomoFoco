@@ -67,13 +67,14 @@
             <button class="btn-stop" onclick="parar()">Parar</button>
         </div>
     </div>
+    <a class="link-hist" href="/history">Ver Historico</a>
 
 </div>
 
-<audio id="somSino"
-       src="{{ url_for('static', filename='audio/kex05hnewb9-bell-ringing-sfx-2.mp3') }}">
-</audio>
+    <audio id="somSino"
+           src="{{ url_for('static', filename='audio/kex05hnewb9-bell-ringing-sfx-2.mp3') }}">
+    </audio>
 
-<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>

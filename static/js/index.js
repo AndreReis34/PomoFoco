@@ -51,6 +51,7 @@ function proximoCiclo() {
     timer = null;
 
     if (modo === "foco") {
+        salvarDados()
         cicloAtual++;
         if (cicloAtual % localStorage.getItem("intervalo") === 0) {
             modo = "pausaLonga";
@@ -89,6 +90,27 @@ function tocarSino() {
     const audio = document.getElementById("somSino");
     audio.currentTime = 0; // reinicia
     audio.play();
+}
+
+async function salvarDados(){
+    const payload = {
+        data: new Date().toISOString().split("T")[0],
+        hora: new Date().toTimeString().slice(0,5),
+        minutos: localStorage.getItem("foco")
+    }
+
+    const resp = await fetch("/salvarDB", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });2
+
+      const resultado = await resp.json();
+      document.getElementById("status").textContent =
+        JSON.stringify(resultado, null, 2);
+
 }
 
 /* Referências */
