@@ -1,16 +1,3 @@
-
-## Principais problemas atuais
-
-* Muitos erros de português
-* Texto longo e confuso
-* Comentários pessoais (“pensei tarde”, “vou arrumar depois”)
-* Instruções misturadas com opinião
-* Falta uma visão rápida do projeto
-
-Recrutador costuma bater o olho por **30–60 segundos**.
-
----
-
 ## README recomendado (pronto para usar)
 
 Você pode substituir pelo texto abaixo 👇
