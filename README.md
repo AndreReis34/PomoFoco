@@ -1,9 +1,3 @@
-A ideia do README é **boa**, mas ele **não está bom ainda** para recrutador ou dev.
-Tem problemas de **ortografia**, **organização** e **tom** (muito informal).
-
-Vou mostrar **como melhorar**, mantendo tudo simples.
-
----
 
 ## Principais problemas atuais
 
