@@ -1,8 +1,3 @@
-## README recomendado (pronto para usar)
-
-Você pode substituir pelo texto abaixo 👇
-
-````md
 # PomoFoco
 
 Aplicação web de produtividade baseada na técnica Pomodoro.
