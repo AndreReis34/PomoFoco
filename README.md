@@ -36,14 +36,6 @@ flask --app app run
 
 A aplicação estará disponível em `http://127.0.0.1:5000`.
 
-## Deploy
-
-O projeto está hospedado no Railway:
-[https://pomofoco-production.up.railway.app/](https://pomofoco-production.up.railway.app/)
-
-> Observação: o banco de dados é compartilhado entre os usuários.
-> Os dados são apenas demonstrativos.
-
 ## Observações técnicas
 
 O projeto utiliza banco de dados para treinar conceitos de back-end.
